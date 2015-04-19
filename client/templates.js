@@ -10,10 +10,6 @@ Template.firstPage.events({
 	},
 
 	'click #goLeft': function(){
-		var la = Bender.go( '/left', {}, { animation: 'slideRight' });
-
-		console.log( la );
-
 		Bender.go( '/left', {}, { animation: 'slideRight' });
 	},
 
