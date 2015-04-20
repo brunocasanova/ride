@@ -1,16 +1,14 @@
 #!/bin/sh
-
-# this assumes you created the openshift directory in your home directory
  
-meteor build builder
+meteor build bundler
 
-cp builder/ride.tar.gz ~/OpenShift/brunocasanova/ride/openshift-builder
-rm builder/ride.tar.gz
+cp bundler/app.tar.gz ~/OpenShift/brunocasanova/ride/builder
+rm -r bundler
 
-cd ~/OpenShift/brunocasanova/ride/openshift-builder
+cd ~/OpenShift/brunocasanova/ride/builder
 
-tar -xvf ride.tar.gz -s '/^bundle//'
-rm ride.tar.gz
+tar -xvf app.tar.gz -s '/^bundle//'
+rm app.tar.gz
 
 git add .
 
