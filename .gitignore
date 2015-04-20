@@ -1,3 +1,2 @@
-.meteor/local
-openshift-builder/
-builder/
+openshift-builder
+builder
