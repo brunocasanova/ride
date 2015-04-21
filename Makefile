@@ -36,6 +36,6 @@ push-production:
 	git add . && git add -u && git commit -m $(AUTO_COMMIT) && git push upstream master -f
 
 push-origin:
-	@cd $(APP_CHD); \
+	$(APP_CHD); \
 	git add . && git add -u && git commit -m $(AUTO_COMMIT) && git push origin master -f
 
